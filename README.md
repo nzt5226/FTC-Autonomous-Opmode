@@ -2,12 +2,12 @@
 
 This project contains an autonomous opmode for a robot competing in the FIRST Tech Challenge (FTC). The opmode is designed to perform complex movements while maintaining accurate position tracking using odometry and sensor fusion techniques.
 
-Overview
+## Overview
 The opmode is built using a combination of several advanced mathematical concepts, including multivariable calculus, arc length parametrization, Kalman filtering, and sensor fusion. By incorporating these techniques, the robot is able to accurately track its position and orientation on the field, and perform complex movements such as arcs and circles.
 
 The opmode is split into several classes, each of which handles a specific aspect of the robot's behavior. Robot.java defines the physical characteristics and behaviors of the robot, while Odometry.java uses calculus to accurately track its position and orientation. SensorFusion.java combines data from the robot's IMU and odometry sensors to provide a more accurate estimation of its position and orientation, while CurvedMovement.java adds the ability to perform curved movements. AutonomousMasterCode.java ties together all of these components to create a comprehensive autonomous opmode.
 
-Usage
+## Usage
 To use these programs, you first need to make sure that the robot's hardware components are connected and initialized correctly in the Robot.java file. This includes setting up the motor controllers, sensors, and other devices according to your robot's configuration.
 
 Once the hardware is set up, you can use the following programs in sequence to enable advanced autonomous capabilities:
@@ -22,7 +22,7 @@ AutonomousMasterCode.java: This program allows you to create and execute custom 
 
 When using these programs, it's important to constantly monitor the robot's position and heading to ensure it is following the desired path and performing the correct actions. Use the telemetry output and debugging tools available in the FTC SDK to aid in this process.
 
-Dependencies
+## Dependencies
 This opmode requires the following components:
 
 FTC SDK
@@ -35,5 +35,5 @@ IMU sensor
 Credits
 This code was developed by [your name] as part of an FTC competition team. It incorporates advanced mathematical concepts and techniques to improve the accuracy and performance of the robot.
 
-License
+## License
 This project is licensed under the [insert license]. You are free to use, modify, and distribute this code as long as you adhere to the terms of the license.
