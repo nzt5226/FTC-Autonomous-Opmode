@@ -34,7 +34,7 @@ Encoder sensors
 IMU sensor
 
 ## Credits
-This code was developed by Nathan Tam as part of FTC Team #11208. It incorporates advanced mathematical concepts and techniques to improve the accuracy and performance of the robot.
+This code was developed by chat gpt and Nathan Tam as part of FTC Team #11208. It incorporates advanced mathematical concepts and techniques to improve the accuracy and performance of the robot.
 
 ## License
 This project is licensed under the [insert license]. You are free to use, modify, and distribute this code as long as you adhere to the terms of the license.
