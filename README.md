@@ -1,7 +1,5 @@
 # FTC-Autonomous-Opmode
-This repository contains a collection of advanced algorithms for FTC robots, including odometry, sensor fusion, curved movement, and autonomous programming, all incorporating Kalman filtering. These algorithms can be used to improve the accuracy and efficiency of FTC robots during competitions.
 
-## FTC Autonomous Opmode
 This project contains an autonomous opmode for a robot competing in the FIRST Tech Challenge (FTC). The opmode is designed to perform complex movements while maintaining accurate position tracking using odometry and sensor fusion techniques.
 
 Overview
@@ -10,12 +8,19 @@ The opmode is built using a combination of several advanced mathematical concept
 The opmode is split into several classes, each of which handles a specific aspect of the robot's behavior. Robot.java defines the physical characteristics and behaviors of the robot, while Odometry.java uses calculus to accurately track its position and orientation. SensorFusion.java combines data from the robot's IMU and odometry sensors to provide a more accurate estimation of its position and orientation, while CurvedMovement.java adds the ability to perform curved movements. AutonomousMasterCode.java ties together all of these components to create a comprehensive autonomous opmode.
 
 Usage
-To use this opmode, follow these steps:
+To use these programs, you first need to make sure that the robot's hardware components are connected and initialized correctly in the Robot.java file. This includes setting up the motor controllers, sensors, and other devices according to your robot's configuration.
 
-Connect all required hardware components, including the robot controller phone, expansion hub, motors and servos, encoder sensors, and IMU sensor.
-Initialize the robot's starting position in the opmode. This can be done using either manual measurements or a field positioning system such as Vuforia or Tensorflow.
-Run AutonomousMasterCode.java on your FTC robot. The robot will then perform the programmed movements autonomously.
-During operation, the robot will use its sensors to continually track its position and orientation, and adjust its movements accordingly. The opmode includes several predefined movements, but can be easily modified to perform custom tasks as needed.
+Once the hardware is set up, you can use the following programs in sequence to enable advanced autonomous capabilities:
+
+Odometry.java: This program initializes the robot's starting position and tracks its movement using wheel encoders. Running this program first will provide a starting point for subsequent programs that rely on accurate position tracking.
+
+SensorFusion.java: This program fuses data from the wheel encoders and the IMU to obtain more accurate and reliable position and heading estimates. Running this program after Odometry.java will improve the accuracy of subsequent autonomous routines.
+
+CurvedMovement.java: This program plans and executes curved movements by generating a smooth path and controlling the robot's speed and turning using a PID controller. You can use this program to perform complex maneuvers such as turns and arcs.
+
+AutonomousMasterCode.java: This program allows you to create and execute custom autonomous routines, incorporating the previous programs as necessary. Use the provided functions and variables to control the robot's movement and integrate additional sensors and functions as needed.
+
+When using these programs, it's important to constantly monitor the robot's position and heading to ensure it is following the desired path and performing the correct actions. Use the telemetry output and debugging tools available in the FTC SDK to aid in this process.
 
 Dependencies
 This opmode requires the following components:
