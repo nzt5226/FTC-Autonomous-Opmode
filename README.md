@@ -12,13 +12,13 @@ To use these programs, you first need to make sure that the robot's hardware com
 
 Once the hardware is set up, you can use the following programs in sequence to enable advanced autonomous capabilities:
 
-**Odometry.java: This program initializes the robot's starting position and tracks its movement using wheel encoders. Running this program first will provide a starting point for subsequent programs that rely on accurate position tracking.
+**Odometry.java**: This program initializes the robot's starting position and tracks its movement using wheel encoders. Running this program first will provide a starting point for subsequent programs that rely on accurate position tracking.
 
-**SensorFusion.java: This program fuses data from the wheel encoders and the IMU to obtain more accurate and reliable position and heading estimates. Running this program after Odometry.java will improve the accuracy of subsequent autonomous routines.
+**SensorFusion.java**: This program fuses data from the wheel encoders and the IMU to obtain more accurate and reliable position and heading estimates. Running this program after Odometry.java will improve the accuracy of subsequent autonomous routines.
 
-**CurvedMovement.java: This program plans and executes curved movements by generating a smooth path and controlling the robot's speed and turning using a PID controller. You can use this program to perform complex maneuvers such as turns and arcs.
+**CurvedMovement.java**: This program plans and executes curved movements by generating a smooth path and controlling the robot's speed and turning using a PID controller. You can use this program to perform complex maneuvers such as turns and arcs.
 
-**AutonomousMasterCode.java: This program allows you to create and execute custom autonomous routines, incorporating the previous programs as necessary. Use the provided functions and variables to control the robot's movement and integrate additional sensors and functions as needed.
+**AutonomousMasterCode.java**: This program allows you to create and execute custom autonomous routines, incorporating the previous programs as necessary. Use the provided functions and variables to control the robot's movement and integrate additional sensors and functions as needed.
 
 When using these programs, it's important to constantly monitor the robot's position and heading to ensure it is following the desired path and performing the correct actions. Use the telemetry output and debugging tools available in the FTC SDK to aid in this process.
 
@@ -34,7 +34,7 @@ Encoder sensors
 IMU sensor
 
 ## Credits
-This code was developed by Nathan Tam as part of an FTC competition team. It incorporates advanced mathematical concepts and techniques to improve the accuracy and performance of the robot.
+This code was developed by Nathan Tam as part of FTC Team #11208. It incorporates advanced mathematical concepts and techniques to improve the accuracy and performance of the robot.
 
 ## License
 This project is licensed under the [insert license]. You are free to use, modify, and distribute this code as long as you adhere to the terms of the license.
