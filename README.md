@@ -12,7 +12,7 @@ To use these programs, you first need to make sure that the robot's hardware com
 
 Once the hardware is set up, you can use the following programs in sequence to enable advanced autonomous capabilities:
 
-Odometry.java: This program initializes the robot's starting position and tracks its movement using wheel encoders. Running this program first will provide a starting point for subsequent programs that rely on accurate position tracking.
+*Odometry.java*: This program initializes the robot's starting position and tracks its movement using wheel encoders. Running this program first will provide a starting point for subsequent programs that rely on accurate position tracking.
 
 SensorFusion.java: This program fuses data from the wheel encoders and the IMU to obtain more accurate and reliable position and heading estimates. Running this program after Odometry.java will improve the accuracy of subsequent autonomous routines.
 
